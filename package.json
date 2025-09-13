@@ -1,0 +1,24 @@
+{
+  "name": "spike-cpdd-site",
+  "version": "1.0.0",
+  "description": "Comparação entre Next.js e Astro com biblioteca compartilhada",
+  "private": true,
+  "scripts": {
+    "dev:next": "pnpm --filter next-app dev",
+    "dev:astro": "pnpm --filter astro-app dev",
+    "dev:all": "pnpm --filter next-app --filter astro-app --parallel dev",
+    "build:next": "pnpm --filter next-app build",
+    "build:astro": "pnpm --filter astro-app build",
+    "build:all": "pnpm --filter next-app --filter astro-app build",
+    "build:ui": "pnpm --filter ui-components build",
+    "install:all": "pnpm install --recursive"
+  },
+  "workspaces": [
+    "next-app",
+    "astro-app",
+    "ui-components"
+  ],
+  "devDependencies": {
+    "pnpm": "^10.0.0"
+  }
+}

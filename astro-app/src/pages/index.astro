@@ -1,0 +1,25 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { SimpleButton } from "@ui-components/SimpleButton";
+---
+
+<Layout title="Astro - Spike CPDD Site">
+  <div>
+    <h2>Página Inicial do Astro</h2>
+    <p>Este é um exemplo de página usando Astro com um componente da biblioteca compartilhada.</p>
+
+    <div style="margin: 20px 0">
+      <h3>Componente da Biblioteca UI:</h3>
+      <SimpleButton client:load />
+    </div>
+
+    <div>
+      <h3>Sobre este projeto:</h3>
+      <ul>
+        <li>Framework: Astro</li>
+        <li>Componente: Importado da biblioteca ui-components</li>
+        <li>Estado: Gerenciado pelo React (hidratado com client:load)</li>
+      </ul>
+    </div>
+  </div>
+</Layout>

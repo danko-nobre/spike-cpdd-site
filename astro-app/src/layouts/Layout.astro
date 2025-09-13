@@ -1,0 +1,34 @@
+---
+export interface Props {
+  title: string;
+  children?: any;
+}
+
+const { title } = Astro.props;
+---
+
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Astro Project</h1>
+        <p>Usando biblioteca compartilhada de componentes</p>
+      </div>
+    </header>
+    <main class="container">
+      <slot />
+    </main>
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Spike CPDD - Astro</p>
+      </div>
+    </footer>
+  </body>
+</html>

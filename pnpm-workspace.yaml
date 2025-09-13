@@ -1,0 +1,4 @@
+packages:
+  - "next-app"
+  - "astro-app"
+  - "ui-components"
