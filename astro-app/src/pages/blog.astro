@@ -1,0 +1,36 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { PostList, type Post } from "@ui-components/PostList";
+
+async function getPosts(): Promise<Post[]> {
+  const res = await fetch("https://jsonplaceholder.typicode.com/posts");
+  if (!res.ok) {
+    throw new Error("Failed to fetch posts");
+  }
+  const posts = await res.json();
+  return posts.slice(0, 3);
+}
+
+const posts = await getPosts();
+---
+
+<Layout title="Blog - Astro - Spike CPDD Site">
+  <div>
+    <h2>Blog - Astro</h2>
+    <p>Esta é a página de blog com dados buscados durante o build (SSG).</p>
+
+    <div style="margin: 20px 0">
+      <PostList posts={posts} client:load />
+    </div>
+
+    <div>
+      <h3>Sobre esta página:</h3>
+      <ul>
+        <li>Framework: Astro</li>
+        <li>Rota: /blog</li>
+        <li>Dados: Buscados no build-time (SSG)</li>
+        <li>API: JSONPlaceholder</li>
+      </ul>
+    </div>
+  </div>
+</Layout>

@@ -11,6 +11,13 @@ export default function Home() {
         <SimpleButton />
       </div>
 
+      <div style={{ margin: "20px 0" }}>
+        <h3>Navegação:</h3>
+        <a href="/blog" style={{ color: "#007acc", textDecoration: "underline" }}>
+          Ir para o Blog →
+        </a>
+      </div>
+
       <div>
         <h3>Sobre este projeto:</h3>
         <ul>
