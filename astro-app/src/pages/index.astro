@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { SimpleButton } from "@ui-components/SimpleButton";
+import { StaticComponent } from "@ui-components/StaticComponent";
 ---
 
 <Layout title="Astro - Spike CPDD Site">
@@ -12,8 +13,13 @@ import { SimpleButton } from "@ui-components/SimpleButton";
     </p>
 
     <div style="margin: 20px 0">
-      <h3>Componente da Biblioteca UI:</h3>
+      <h3>Componente Interativo (com client:load):</h3>
       <SimpleButton client:load />
+    </div>
+
+    <div style="margin: 20px 0">
+      <h3>Componente Estático (sem client:load):</h3>
+      <StaticComponent />
     </div>
 
     <div style="margin: 20px 0">
@@ -27,8 +33,8 @@ import { SimpleButton } from "@ui-components/SimpleButton";
       <h3>Sobre este projeto:</h3>
       <ul>
         <li>Framework: Astro</li>
-        <li>Componente: Importado da biblioteca ui-components</li>
-        <li>Estado: Gerenciado pelo React (hidratado com client:load)</li>
+        <li>Componente interativo: JavaScript hidratado</li>
+        <li>Componente estático: Apenas HTML</li>
       </ul>
     </div>
   </div>

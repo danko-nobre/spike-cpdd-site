@@ -1,4 +1,5 @@
 import { SimpleButton } from "@ui-components/SimpleButton";
+import { StaticComponent } from "@ui-components/StaticComponent";
 
 export default function Home() {
   return (
@@ -7,8 +8,13 @@ export default function Home() {
       <p>Este é um exemplo de página usando Next.js com um componente da biblioteca compartilhada.</p>
 
       <div style={{ margin: "20px 0" }}>
-        <h3>Componente da Biblioteca UI:</h3>
+        <h3>Componente Interativo (com "use client"):</h3>
         <SimpleButton />
+      </div>
+
+      <div style={{ margin: "20px 0" }}>
+        <h3>Componente Estático (sem "use client"):</h3>
+        <StaticComponent />
       </div>
 
       <div style={{ margin: "20px 0" }}>
@@ -22,8 +28,8 @@ export default function Home() {
         <h3>Sobre este projeto:</h3>
         <ul>
           <li>Framework: Next.js</li>
-          <li>Componente: Importado da biblioteca ui-components</li>
-          <li>Estado: Gerenciado pelo React</li>
+          <li>Componente interativo: JavaScript no cliente</li>
+          <li>Componente estático: Apenas HTML</li>
         </ul>
       </div>
     </div>
