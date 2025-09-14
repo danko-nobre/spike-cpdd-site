@@ -116,30 +116,42 @@ graph LR
 - **Next.js**: Bundle maior, mais JavaScript, hidratação completa
 - **Astro**: Bundle menor, JavaScript mínimo, hidratação seletiva
 
+---
+
 ## Casos de Uso para SSR
 
-### Quando usar SSR
+### Quando usar SSR (em vez de SSG)
 
-- **E-commerce**: Páginas de produto precisam de SEO para aparecer no Google
-- **Blogs/CMS**: Artigos devem ser indexados pelos motores de busca
-- **Landing pages**: Marketing precisa de carregamento rápido e SEO
-- **Portais de notícias**: Conteúdo atualizado constantemente
-- **Apps com autenticação**: Dados personalizados por usuário
-- **Sites corporativos**: SEO crítico para aquisição de clientes
+- **E-commerce com dados dinâmicos**: Preços, estoque, promoções que mudam constantemente
+- **Blogs com comentários**: Seção de comentários atualizada em tempo real
+- **Landing pages personalizadas**: Conteúdo baseado em geolocalização ou perfil do usuário
+- **Portais de notícias**: Artigos publicados frequentemente (várias vezes por dia)
+- **Apps com autenticação**: Dados personalizados que variam por usuário logado
+- **Sites com A/B testing**: Variações de conteúdo servidas dinamicamente
 
-### Quando NÃO usar SSR
+### Quando NÃO usar SSR (use SSG)
 
-- **Dashboards internos**: SEO irrelevante, dados sensíveis
-- **Apps admin**: Usuários logados, performance menos crítica
-- **Ferramentas internas**: Funcionalidade > SEO
-- **Protótipos**: Velocidade de desenvolvimento prioritária
+- **Blogs estáticos**: Artigos que não mudam após publicação
+- **Landing pages fixas**: Conteúdo marketing que permanece igual para todos
+- **E-commerce pequeno**: Catálogo que muda pouco (atualização semanal/mensal)
+- **Documentação**: Conteúdo técnico que raramente muda
+- **Portfólios**: Sites pessoais com conteúdo estático
+- **Sites corporativos**: Informações institucionais que raramente mudam
 
-### Framework por caso de uso
+---
 
-| Caso de Uso     | Next.js  | Astro        | Justificativa                                          |
-| --------------- | -------- | ------------ | ------------------------------------------------------ |
-| E-commerce      | ✅ Ideal | ⚡ Excelente | Next.js: ISR para catálogo / Astro: Performance máxima |
-| Blog            | ✅ Bom   | ⚡ Ideal     | Astro otimizado para conteúdo estático                 |
-| Landing page    | ✅ Bom   | ⚡ Ideal     | Astro: Lighthouse scores naturalmente altos            |
-| App complexa    | ✅ Ideal | ❌ Limitado  | Next.js: Melhor para interatividade pesada             |
-| Portal notícias | ✅ Ideal | ⚡ Bom       | Next.js: ISR para atualizações automáticas             |
+## Limitações do SSR
+
+### Problemas comuns
+
+- **Servidor necessário**: Custo de infraestrutura sempre rodando
+- **Latência de rede**: Cada request precisa ir ao servidor
+- **Complexidade**: Mais difícil de debugar e deployar
+- **Escalabilidade**: Precisa gerenciar carga do servidor
+
+### Soluções
+
+- **Edge SSR**: Renderização em servidores próximos ao usuário
+- **Caching**: Cache de páginas renderizadas
+- **CDN**: Distribuição global para reduzir latência
+- **Load balancing**: Distribuição de carga entre servidores

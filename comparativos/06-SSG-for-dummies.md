@@ -131,34 +131,29 @@ graph LR
 - **Next.js**: Arquivos maiores (React included), hidratação automática
 - **Astro**: Arquivos menores, JavaScript opcional
 
+---
+
 ## Casos de Uso para SSG
 
-### Quando usar SSG
+### Quando usar SSG (em vez de SSR)
 
-- **Blogs**: Conteúdo que não muda frequentemente
-- **Documentação**: Páginas estáticas com navegação
-- **Landing pages**: Marketing com performance máxima
-- **Portfólios**: Sites pessoais e showcases
-- **Sites corporativos**: Informações institucionais
-- **E-commerce pequeno**: Catálogo com poucas mudanças
+- **Blogs estáticos**: Artigos que não mudam após publicação
+- **Documentação técnica**: Conteúdo que raramente é atualizado
+- **Landing pages fixas**: Marketing igual para todos os usuários
+- **Portfólios pessoais**: Showcases que mudam esporadicamente
+- **Sites corporativos**: Informações institucionais estáveis
+- **E-commerce pequeno**: Catálogo que muda semanal/mensalmente
 
-### Quando NÃO usar SSG
+### Quando NÃO usar SSG (use SSR/CSR)
 
-- **Dados em tempo real**: Dashboards, feeds ao vivo
-- **Conteúdo personalizado**: Por usuário logado
-- **Apps interativas**: Muita lógica client-side
-- **Conteúdo frequente**: Atualizações constantes
+- **E-commerce com preços dinâmicos**: Preços, estoque que mudam constantemente
+- **Blogs com comentários**: Interação em tempo real necessária
+- **Conteúdo personalizado**: Dados específicos por usuário logado
+- **Portais de notícias**: Publicações múltiplas vezes por dia
+- **Apps com A/B testing**: Variações dinâmicas de conteúdo
+- **Dashboards**: Dados que precisam estar sempre atualizados
 
-### Framework por caso de uso
-
-| Caso de Uso      | Next.js     | Astro       | Justificativa                                    |
-| ---------------- | ----------- | ----------- | ------------------------------------------------ |
-| Blog             | ✅ Bom      | ⚡ Ideal    | Astro otimizado para conteúdo                    |
-| Documentação     | ✅ Bom      | ⚡ Ideal    | Astro: MDX nativo, performance superior          |
-| Landing page     | ✅ Bom      | ⚡ Ideal    | Astro: Lighthouse 100, carregamento instantâneo |
-| E-commerce       | ✅ Ideal    | ⚡ Bom      | Next.js: Melhor para funcionalidades complexas  |
-| Portfólio        | ✅ Bom      | ⚡ Ideal    | Astro: Performance + facilidade de conteúdo     |
-| App complexa     | ✅ Limitado | ❌ Não usar | SSG inadequado para apps interativas             |
+---
 
 ## Limitações do SSG
 
