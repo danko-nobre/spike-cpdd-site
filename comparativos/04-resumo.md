@@ -54,4 +54,5 @@
 ## Decisão Rápida
 
 **Escolha Astro se**: Site de conteúdo, performance crítica, JS mínimo
+
 **Escolha Next.js se**: App interativa, SSR necessário, equipe React

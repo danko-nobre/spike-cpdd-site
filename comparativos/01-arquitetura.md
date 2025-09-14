@@ -10,8 +10,9 @@ Aplicação de página única onde toda navegação acontece via JavaScript, sem
 - SEO: Ruim por padrão (HTML vazio inicial)
 - Navegação: Instantânea, sem recarregamentos visíveis entre páginas
 
-- **Prós**: Experiência fluida, menos requests entre "páginas"
-- **Contras**: Bundle grande, SEO complexo, dependente de JavaScript
+**Prós**: Experiência fluida, menos requests entre "páginas"
+
+**Contras**: Bundle grande, SEO complexo, dependente de JavaScript
 
 ### Astro vs Next.js para SPA
 
@@ -31,8 +32,9 @@ Aplicação com múltiplas páginas HTML onde cada rota carrega uma nova página
 - SEO: Excelente por padrão (HTML completo)
 - Navegação: Recarregamentos visíveis entre páginas
 
-- **Prós**: SEO "nativo", menos JavaScript, carregamento progressivo
-- **Contras**: Navegação mais lenta, mais requests ao servidor
+**Prós**: SEO "nativo", menos JavaScript, carregamento progressivo
+
+**Contras**: Navegação mais lenta, mais requests ao servidor
 
 ### Astro vs Next.js para MPA
 
@@ -52,8 +54,9 @@ Páginas estáticas com "ilhas" de interatividade hidratadas seletivamente.
 - SEO: Excelente (HTML estático com JS mínimo)
 - Navegação: MPA tradicional com componentes interativos
 
-- **Prós**: Performance máxima, JavaScript mínimo, SEO otimizado
-- **Contras**: Menos flexibilidade para apps complexas, coordenação entre ilhas
+**Prós**: Performance máxima, JavaScript mínimo, SEO otimizado
+
+**Contras**: Menos flexibilidade para apps complexas, coordenação entre ilhas
 
 ### Astro vs Next.js para Islands
 
@@ -75,8 +78,9 @@ Aplicação web que funciona como app nativo com capacidades offline.
 - SEO: Depende da implementação (pode ser SPA ou MPA)
 - Navegação: Híbrida, pode cachear rotas
 
-- **Prós**: Funciona offline, instalável, push notifications
-- **Contras**: Complexidade adicional, tamanho do cache
+**Prós**: Funciona offline, instalável, push notifications
+
+**Contras**: Complexidade adicional, tamanho do cache
 
 ### Micro Frontends
 
@@ -88,5 +92,6 @@ Arquitetura onde diferentes equipes desenvolvem partes independentes da aplicaç
 - SEO: Complexo, depende da implementação
 - Navegação: Coordenada entre micro apps
 
-- **Prós**: Escalabilidade de equipes, deploy independente, tecnologias diferentes
-- **Contras**: Complexidade alta, overhead de comunicação, bundle duplicado
+**Prós**: Escalabilidade de equipes, deploy independente, tecnologias diferentes
+
+**Contras**: Complexidade alta, overhead de comunicação, bundle duplicado

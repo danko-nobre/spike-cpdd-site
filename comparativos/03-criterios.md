@@ -12,8 +12,8 @@
 
 ## Bibliotecas de Componentes
 
-- Astro: pode usar qualquer lib (React, Vue, etc.) e, portanto, qualquer biblioteca, [os .astro no storybook só funcionam se for na gambi](https://github.com/orgs/storybookjs/projects/20/views/1?pane=issue&itemId=111544053&issue=storybookjs%7Cstorybook%7C18356)
-- Next.js: storybook nativo, ecossistema React robusto (Chakra, MUI, etc.)
+- Astro: pode usar qualquer lib (React, Vue, etc.) e, portanto, qualquer biblioteca. Os [.astro no storybook só funcionam se for na gambi](https://github.com/orgs/storybookjs/projects/20/views/1?pane=issue&itemId=111544053&issue=storybookjs%7Cstorybook%7C18356).
+- Next.js: storybook nativo (é react), ecossistema React robusto (Chakra, MUI, etc.)
 
 ## Acessibilidade
 
@@ -38,7 +38,7 @@
 ## Cache e Performance
 
 - Astro: performance excelente por padrão, builds rápidos
-- Next.js: ISR, Edge Runtime, Image optimization, requer configuração
+- Next.js: ISR, Edge Runtime, requer configuração
 
 ## Tamanho do Bundle
 

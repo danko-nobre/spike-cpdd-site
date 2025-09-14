@@ -10,8 +10,9 @@ Renderização no navegador via JavaScript.
 - SEO: Ruim (HTML vazio)
 - Navegação: Instantânea após carregamento inicial
 
-- **Prós**: Experiência fluida, cache eficiente
-- **Contras**: Bundle grande, dependente de JS
+**Prós**: Experiência fluida, cache eficiente
+
+**Contras**: Bundle grande, dependente de JS
 
 ### Astro vs Next.js para CSR
 
@@ -49,8 +50,9 @@ HTML renderizado no servidor a cada requisição.
 - SEO: Excelente (HTML completo)
 - Navegação: Híbrida (inicial server, depois client)
 
-- **Prós**: SEO nativo, dados atualizados
-- **Contras**: Servidor necessário, maior complexidade
+**Prós**: SEO nativo, dados atualizados
+
+**Contras**: Servidor necessário, maior complexidade
 
 ### Astro vs Next.js para SSR
 
@@ -92,8 +94,9 @@ HTML pré-renderizado em build time.
 - SEO: Excelente
 - Navegação: Tradicional ou híbrida
 
-- **Prós**: Performance máxima, hosting barato
-- **Contras**: Rebuild necessário para mudanças
+**Prós**: Performance máxima, hosting barato
+
+**Contras**: Rebuild necessário para mudanças
 
 ### Astro vs Next.js para SSG
 
@@ -134,8 +137,9 @@ SSG com regeneração sob demanda.
 - Carregamento: Rápido + atualizações automáticas
 - Navegação: Híbrida otimizada
 
-- **Prós**: Performance de SSG + dados frescos
-- **Contras**: Infraestrutura específica necessária
+**Prós**: Performance de SSG + dados frescos
+
+**Contras**: Infraestrutura específica necessária
 
 ### Astro vs Next.js para ISR
 
@@ -171,8 +175,9 @@ Renderização em servidores edge globais.
 - Carregamento: Latência mínima worldwide
 - Navegação: Ultra-rápida worldwide
 
-- **Prós**: Performance global, personalização geo
-- **Contras**: Runtime limitado, debugging complexo
+**Prós**: Performance global, personalização geo
+
+**Contras**: Runtime limitado, debugging complexo
 
 ### Astro vs Next.js para ESR
 
@@ -204,8 +209,9 @@ Renderização progressiva server-side.
 - Carregamento: Progressivo sem blocking
 - Navegação: Loading states naturais
 
-- **Prós**: Perceived performance alta
-- **Contras**: Complexidade de estado
+**Prós**: Perceived performance alta
+
+**Contras**: Complexidade de estado
 
 ### Astro vs Next.js para Streaming SSR
 
