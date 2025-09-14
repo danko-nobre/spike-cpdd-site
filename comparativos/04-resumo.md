@@ -1,5 +1,15 @@
 # Resumo
 
+## Arquiteturas Web
+
+| Arquitetura     | Astro     | Next.js | Caso de Uso                    |
+| --------------- | --------- | ------- | ------------------------------ |
+| SPA             | 1Nojo     | Nativo  | Dashboards, apps internas      |
+| MPA             | Excelente | Bom     | Sites institucionais, blogs    |
+| Islands         | Pioneiro  | N/A     | Sites com interatividade pontual |
+| PWA             | Limitado  | Nativo  | Apps offline, mobile-first     |
+| Micro Frontends | N/A       | Possível| Apps enterprise grandes        |
+
 ## Estratégias de Renderização
 
 | Estratégia | Astro       | Next.js   | Caso de Uso     |
@@ -11,27 +21,17 @@
 | ESR        | Nativo      | Otimizado | Apps globais    |
 | Streaming  | Não suporta | Nativo    | UX complexa     |
 
-## Arquiteturas Web
-
-| Arquitetura     | Astro     | Next.js | Caso de Uso                    |
-| --------------- | --------- | ------- | ------------------------------ |
-| SPA             | 1Nojo     | Nativo  | Dashboards, apps internas      |
-| MPA             | Excelente | Bom     | Sites institucionais, blogs    |
-| Islands         | Pioneiro  | N/A     | Sites com interatividade pontual |
-| PWA             | Limitado  | Nativo  | Apps offline, mobile-first     |
-| Micro Frontends | N/A       | Possível| Apps enterprise grandes        |
-
 ## Critérios Técnicos
 
-| Critério           | Astro              | Next.js           | Impacto          |
-| ------------------ | ------------------ | ----------------- | ---------------- |
-| Bundle Inicial     | ~0kB JS            | ~40kB+            | Performance      |
-| Curva Aprendizado  | Baixa              | Moderada/Alta     | Time to Market   |
-| Flexibilidade      | Multi-framework    | React-focado      | Arquitetura      |
-| Comunidade         | Crescente          | Estabelecida      | Suporte          |
-| CMS Integration    | MDX nativo         | getStaticProps    | Conteúdo         |
-| Acessibilidade     | HTML semântico     | Configuração      | Compliance       |
-| Deploy Options     | Qualquer host      | Otimizado Vercel  | DevOps           |
+| Critério           | Astro              | Next.js                |
+| ------------------ | ------------------ | ---------------------- |
+| Bundle Inicial     | ~0kB JS            | ~40kB+                 |
+| Curva Aprendizado  | Baixa              | Moderada/Alta          |
+| Flexibilidade      | Multi-framework    | React-focado           |
+| Comunidade         | Crescente          | Estabelecida           |
+| CMS Integration    | MDX nativo         | getStaticProps         |
+| Acessibilidade     | HTML semântico     | Configuração           |
+| Deploy Options     | Qualquer host      | Otimizado para Vercel  |
 
 ## Quando usar cada um
 
