@@ -59,7 +59,7 @@ HTML renderizado no servidor a cada requisição.
 Astro:
 
 - SSR nativo via `output: 'server'`
-- Hidratação seletiva Onde é comum necessário
+- Hidratação seletiva onde necessário
 - Melhor para sites híbridos (estático + dinâmico)
 
 ```javascript
