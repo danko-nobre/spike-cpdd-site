@@ -11,7 +11,11 @@
     "build:astro": "pnpm --filter astro-app build",
     "build:all": "pnpm --filter next-app --filter astro-app build",
     "build:ui": "pnpm --filter ui-components build",
-    "install:all": "pnpm install --recursive"
+    "install:all": "pnpm install --recursive",
+    "deploy": "pnpm build:all && gh-pages -d public",
+    "lighthouse:astro": "lighthouse https://danko-nobre.github.io/spike-cpdd-site/astro/ --output=html --output-path=./reports/lighthouse-astro.html",
+    "lighthouse:next": "lighthouse https://danko-nobre.github.io/spike-cpdd-site/next/ --output=html --output-path=./reports/lighthouse-next.html",
+    "lighthouse:all": "mkdir -p reports && npm run lighthouse:astro && npm run lighthouse:next"
   },
   "workspaces": [
     "next-app",

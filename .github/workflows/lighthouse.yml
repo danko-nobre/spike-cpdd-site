@@ -1,0 +1,37 @@
+name: Lighthouse Performance Test
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Wait for deployment
+        run: sleep 60
+
+      - name: Lighthouse Astro
+        uses: treosh/lighthouse-ci-action@v12
+        with:
+          urls: |
+            https://danko-nobre.github.io/spike-cpdd-site/astro/
+          uploadArtifacts: true
+          temporaryPublicStorage: true
+
+      - name: Lighthouse Next.js
+        uses: treosh/lighthouse-ci-action@v12
+        with:
+          urls: |
+            https://danko-nobre.github.io/spike-cpdd-site/next/
+          uploadArtifacts: true
+          temporaryPublicStorage: true

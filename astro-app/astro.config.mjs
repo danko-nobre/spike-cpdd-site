@@ -1,8 +1,16 @@
-// @ts-check
 import { defineConfig } from 'astro/config';
 import react from '@astrojs/react';
 
-// https://astro.build/config
 export default defineConfig({
   integrations: [react()],
+  site: 'https://danko-nobre.github.io',
+  base: '/spike-cpdd-site/astro',
+  outDir: '../dist/astro',
+  vite: {
+    resolve: {
+      alias: {
+        "@ui-components": new URL("../ui-components", import.meta.url).pathname,
+      },
+    },
+  },
 });
