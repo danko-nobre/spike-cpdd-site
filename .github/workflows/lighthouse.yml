@@ -25,7 +25,7 @@ jobs:
         with:
           urls: |
             https://danko-nobre.github.io/spike-cpdd-site/astro/
-          uploadArtifacts: true
+          uploadArtifacts: false
           temporaryPublicStorage: true
 
   lighthouse-nextjs:
@@ -47,5 +47,5 @@ jobs:
         with:
           urls: |
             https://danko-nobre.github.io/spike-cpdd-site/next/
-          uploadArtifacts: true
+          uploadArtifacts: false
           temporaryPublicStorage: true
