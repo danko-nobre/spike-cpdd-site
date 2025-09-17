@@ -4,7 +4,7 @@ import react from '@astrojs/react';
 export default defineConfig({
   integrations: [react()],
   site: 'https://danko-nobre.github.io',
-  base: '/spike-cpdd-site',
+  base: '/spike-cpdd-site/astro',
   outDir: '../dist/astro',
   vite: {
     resolve: {
