@@ -1,5 +1,6 @@
 import { SimpleButton } from "@ui-components/SimpleButton";
 import { StaticComponent } from "@ui-components/StaticComponent";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -19,9 +20,9 @@ export default function Home() {
 
       <div style={{ margin: "20px 0" }}>
         <h3>Navegação:</h3>
-        <a href="/blog" style={{ color: "#007acc", textDecoration: "underline" }}>
+        <Link href="/blog" style={{ color: "#007acc", textDecoration: "underline" }}>
           Ir para o Blog →
-        </a>
+        </Link>
       </div>
 
       <div>

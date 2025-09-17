@@ -12,6 +12,7 @@ async function getPosts(): Promise<Post[]> {
 }
 
 const posts = await getPosts();
+const homeUrl = new URL('./', Astro.url).pathname;
 ---
 
 <Layout title="Blog - Astro - Spike CPDD Site">
@@ -25,7 +26,7 @@ const posts = await getPosts();
 
     <div style="margin: 20px 0">
       <h3>Navegação:</h3>
-      <a href="/" style="color: #007acc; text-decoration: underline;">
+      <a href={homeUrl} style="color: #007acc; text-decoration: underline;">
         ← Voltar ao Início
       </a>
     </div>

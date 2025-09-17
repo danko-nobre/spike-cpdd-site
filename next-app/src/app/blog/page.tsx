@@ -1,4 +1,5 @@
 import { PostList, type Post } from "@ui-components/PostList";
+import Link from "next/link";
 
 async function getPosts(): Promise<Post[]> {
     const res = await fetch('https://jsonplaceholder.typicode.com/posts');
@@ -23,9 +24,9 @@ export default async function BlogPage() {
 
             <div style={{ margin: "20px 0" }}>
                 <h3>Navegação:</h3>
-                <a href="/" style={{ color: "#007acc", textDecoration: "underline" }}>
+                <Link href="/" style={{ color: "#007acc", textDecoration: "underline" }}>
                     ← Voltar ao Início
-                </a>
+                </Link>
             </div>
 
             <div>

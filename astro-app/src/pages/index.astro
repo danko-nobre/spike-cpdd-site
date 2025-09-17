@@ -2,6 +2,8 @@
 import Layout from "../layouts/Layout.astro";
 import { SimpleButton } from "@ui-components/SimpleButton";
 import { StaticComponent } from "@ui-components/StaticComponent";
+
+const blogUrl = new URL('./blog', Astro.url).pathname;
 ---
 
 <Layout title="Astro - Spike CPDD Site">
@@ -24,7 +26,7 @@ import { StaticComponent } from "@ui-components/StaticComponent";
 
     <div style="margin: 20px 0">
       <h3>Navegação:</h3>
-      <a href="/blog" style="color: #007acc; text-decoration: underline;">
+      <a href={blogUrl} style="color: #007acc; text-decoration: underline;">
         Ir para o Blog →
       </a>
     </div>
