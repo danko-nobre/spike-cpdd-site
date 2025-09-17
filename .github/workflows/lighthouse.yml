@@ -25,6 +25,7 @@ jobs:
         with:
           urls: |
             https://danko-nobre.github.io/spike-cpdd-site/astro/
+          runs: 5
           uploadArtifacts: false
           temporaryPublicStorage: true
 
@@ -47,5 +48,6 @@ jobs:
         with:
           urls: |
             https://danko-nobre.github.io/spike-cpdd-site/next/
+          runs: 5
           uploadArtifacts: false
           temporaryPublicStorage: true
