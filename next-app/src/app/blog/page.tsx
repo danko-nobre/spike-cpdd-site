@@ -21,6 +21,13 @@ export default async function BlogPage() {
                 <PostList posts={posts} />
             </div>
 
+            <div style={{ margin: "20px 0" }}>
+                <h3>Navegação:</h3>
+                <a href="/" style={{ color: "#007acc", textDecoration: "underline" }}>
+                    ← Voltar ao Início
+                </a>
+            </div>
+
             <div>
                 <h3>Sobre esta página:</h3>
                 <ul>
