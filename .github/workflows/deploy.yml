@@ -47,7 +47,8 @@ jobs:
       - name: Create combined dist
         run: |
           mkdir -p dist-final
-          cp -r dist/astro/* dist-final/
+          mkdir -p dist-final/astro
+          cp -r dist/astro/* dist-final/astro/
           mkdir -p dist-final/next
           cp -r dist/next/* dist-final/next/
           
