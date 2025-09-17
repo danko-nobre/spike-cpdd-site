@@ -12,7 +12,7 @@ async function getPosts(): Promise<Post[]> {
 }
 
 const posts = await getPosts();
-const homeUrl = new URL('./', Astro.url).pathname;
+const homeUrl = import.meta.env.BASE_URL;
 ---
 
 <Layout title="Blog - Astro - Spike CPDD Site">

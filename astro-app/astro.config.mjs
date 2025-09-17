@@ -5,6 +5,7 @@ export default defineConfig({
   integrations: [react()],
   site: 'https://danko-nobre.github.io',
   base: '/spike-cpdd-site/astro',
+  trailingSlash: 'always',
   outDir: '../dist/astro',
   vite: {
     resolve: {

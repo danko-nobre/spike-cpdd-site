@@ -3,7 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import { SimpleButton } from "@ui-components/SimpleButton";
 import { StaticComponent } from "@ui-components/StaticComponent";
 
-const blogUrl = new URL('./blog', Astro.url).pathname;
+const blogUrl = import.meta.env.BASE_URL + 'blog';
 ---
 
 <Layout title="Astro - Spike CPDD Site">
