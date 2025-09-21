@@ -26,6 +26,9 @@ importers:
       react-dom:
         specifier: ^19.1.1
         version: 19.1.1(react@19.1.1)
+      ui-components:
+        specifier: workspace:*
+        version: link:../ui-components
 
   next-app:
     dependencies:
@@ -38,6 +41,9 @@ importers:
       react-dom:
         specifier: 19.1.0
         version: 19.1.0(react@19.1.0)
+      ui-components:
+        specifier: workspace:*
+        version: link:../ui-components
     devDependencies:
       '@eslint/eslintrc':
         specifier: ^3
